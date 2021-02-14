@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="log-path">/data/wsconsultadni-test-dnie/logs</Property>
+        <Property name="log-file">wsconsultadni-test-dni</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="console-log" target="system_out">
+            <PatternLayout pattern="%d{ISO8601_BASIC} %-5p [%t] %C - %m%n"/>
+        </Console>
+
+        <RollingFile name="trace-log"
+                     fileName="${log-path}/${log-file}.log"
+                     filePattern="${log-path}/${date:yyyy-MM}/${log-file}-%d{yyyy-MM-dd}.%i.log"
+                     bufferedIO="true"
+                     bufferSize="8192"
+                     immediateFlush="true"
+                     append="true"
+                     ignoreExceptions="false">
+            <PatternLayout pattern="%d{ISO8601_BASIC} %X{remoteAddr} %-5p %-60.60C{1.} %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="20 MB"/>
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="error-log"
+                     fileName="${log-path}/${log-file}-error.log"
+                     filePattern="${log-path}/${date:yyyy-MM}/${log-file}-error-%d{yyyy-MM-dd}.%i.log"
+                     bufferedIO="true"
+                     bufferSize="8192"
+                     immediateFlush="true"
+                     append="true"
+                     ignoreExceptions="false">
+            <PatternLayout pattern="%d{ISO8601_BASIC} %-5p [%t] %C - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="20 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug" additivity="false">
+            <appender-ref ref="console-log" level="debug"/>
+            <appender-ref ref="trace-log" level="debug"/>
+            <appender-ref ref="error-log" level="error"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

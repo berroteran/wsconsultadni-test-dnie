@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://docs.oracle.com/cd/E24329_01/web.1211/e21049/weblogic_xml.htm#WBAPP592 -->
+<weblogic-web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+                  xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.4/weblogic-web-app.xsd">
+    <context-root>/wsconsultadni-test-dnie/</context-root>
+    <container-descriptor>
+        <prefer-web-inf-classes>false</prefer-web-inf-classes>
+        <prefer-application-packages>
+            <!--<package-name>org.slf4j.*</package-name>-->
+            <package-name>org.bouncycastle.*</package-name>
+            <package-name>com.fasterxml.*</package-name>
+            <package-name>org.springframework.*</package-name>
+            <package-name>org.hibernate.*</package-name>
+            <package-name>javax.validation.*</package-name>
+            <package-name>org.aopalliance.aop.*</package-name>
+            <package-name>org.aopalliance.intercept.*</package-name>
+            <package-name>org.jboss.logging.*</package-name>
+
+            <!--<package-name>com.fasterxml.jackson.databind.JsonNode.*</package-name>-->
+
+        </prefer-application-packages>
+        <prefer-application-resources>
+            <resource-name>org/slf4j/impl/StaticLoggerBinder.class</resource-name>
+        </prefer-application-resources>
+    </container-descriptor>
+
+</weblogic-web-app>

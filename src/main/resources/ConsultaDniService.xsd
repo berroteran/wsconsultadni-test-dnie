@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.3.0-b170407.2038 svn-revision#2eaca54d17a59d265c6fe886b7fd0027836c766c. -->
+<xsd:schema xmlns:ns0="http://endpoint.wsconsultadni.reniec.gob.pe/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://endpoint.wsconsultadni.reniec.gob.pe/">
+    <xsd:complexType name="peticionActualizarCredencial">
+        <xsd:sequence>
+            <xsd:element name="credencialAnterior" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="credencialNueva" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nuDni" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nuRuc" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="peticionConsulta">
+        <xsd:sequence>
+            <xsd:element name="nuDniConsulta" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nuDniUsuario" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nuRucUsuario" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="password" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="peticionConsultaCertificado">
+        <xsd:sequence>
+            <xsd:element name="accessToken" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nuDniConsulta" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nuRucUsuario" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="resultadoActualizacionCredencial">
+        <xsd:sequence>
+            <xsd:element name="coResultado" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="deResultado" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="resultadoConsulta">
+        <xsd:sequence>
+            <xsd:element name="coResultado" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="deResultado" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="datosPersona" type="ns0:datosPersona" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="datosPersona">
+        <xsd:sequence>
+            <xsd:element name="dni" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="prenombres" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="primerApellido" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="apellidoCasada" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="segundoApellido" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="fechaNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="genero" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="estatura" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="estadoCivil" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoEstadoCivil" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="digitoVerificacion" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="foto" type="xsd:base64Binary" minOccurs="0"/>
+            <xsd:element name="restriccion" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoContinenteDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoPaisDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoDepartamentoDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoProvinciaDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoDistritoDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="continenteDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="paisDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="departamentoDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="provinciaDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="distritoDomicilio" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="direccionCompleta" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="prenombreMadre" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="primerApellidoMadre" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="segundoApellidoMadre" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="prenombrePadre" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="primerApellidoPadre" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="segundoApellidoPadre" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="donacionOrgano" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="fechaInscripcion" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="fechaEmision" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="fechaCaducidad" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="continenteNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="paisNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="departamentoNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="provinciaNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="distritoNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoContinenteNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoPaisNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoDepartamentoNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoProvinciaNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoDistritoNacimiento" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="numeroDocumentoAdjunto" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="documentoAdjunto" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoDocumentoAdjunto" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoNivelEducativo" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nivelEducativo" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="codigoVotacion" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="grupoVotacion" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

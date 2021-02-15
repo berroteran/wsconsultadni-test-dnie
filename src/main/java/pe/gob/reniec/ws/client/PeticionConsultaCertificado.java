@@ -1,4 +1,3 @@
-
 package pe.gob.reniec.ws.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para peticionConsultaCertificado complex type.
- * 
+ *
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * 
+ *
  * <pre>
  * &lt;complexType name="peticionConsultaCertificado">
  *   &lt;complexContent>
@@ -24,15 +23,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "peticionConsultaCertificado", propOrder = {
-    "accessToken",
-    "nuDniConsulta",
-    "nuRucUsuario"
-})
+@XmlType(name = "peticionConsultaCertificado", propOrder = {"accessToken", "nuDniConsulta", "nuRucUsuario"})
 public class PeticionConsultaCertificado {
 
     protected String accessToken;
@@ -41,11 +34,9 @@ public class PeticionConsultaCertificado {
 
     /**
      * Obtiene el valor de la propiedad accessToken.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAccessToken() {
         return accessToken;
@@ -53,11 +44,9 @@ public class PeticionConsultaCertificado {
 
     /**
      * Define el valor de la propiedad accessToken.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAccessToken(String value) {
         this.accessToken = value;
@@ -65,11 +54,9 @@ public class PeticionConsultaCertificado {
 
     /**
      * Obtiene el valor de la propiedad nuDniConsulta.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNuDniConsulta() {
         return nuDniConsulta;
@@ -77,11 +64,9 @@ public class PeticionConsultaCertificado {
 
     /**
      * Define el valor de la propiedad nuDniConsulta.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNuDniConsulta(String value) {
         this.nuDniConsulta = value;
@@ -89,11 +74,9 @@ public class PeticionConsultaCertificado {
 
     /**
      * Obtiene el valor de la propiedad nuRucUsuario.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNuRucUsuario() {
         return nuRucUsuario;
@@ -101,11 +84,9 @@ public class PeticionConsultaCertificado {
 
     /**
      * Define el valor de la propiedad nuRucUsuario.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNuRucUsuario(String value) {
         this.nuRucUsuario = value;

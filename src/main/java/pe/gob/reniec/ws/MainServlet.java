@@ -112,8 +112,7 @@ public class MainServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         initialize();
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
         req.setAttribute("dnieAuthRedirectUri", redirectUri);
@@ -211,8 +210,7 @@ public class MainServlet extends HttpServlet {
     }
 
     // obtiene SSLSocketFactory
-    private SSLSocketFactory getSSLSocketFactory() throws NoSuchAlgorithmException, KeyStoreException, IOException,
-            CertificateException, UnrecoverableKeyException, KeyManagementException {
+    private SSLSocketFactory getSSLSocketFactory() throws NoSuchAlgorithmException, KeyStoreException, IOException, CertificateException, UnrecoverableKeyException, KeyManagementException {
         KeyManagerFactory keyManagerFactory = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
         KeyStore myKeyStore = KeyStore.getInstance("JKS");
         // identidad

@@ -1,4 +1,3 @@
-
 package pe.gob.reniec.ws.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para datosPersona complex type.
- * 
+ *
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * 
+ *
  * <pre>
  * &lt;complexType name="datosPersona">
  *   &lt;complexContent>
@@ -72,63 +71,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "datosPersona", propOrder = {
-    "dni",
-    "prenombres",
-    "primerApellido",
-    "apellidoCasada",
-    "segundoApellido",
-    "fechaNacimiento",
-    "genero",
-    "estatura",
-    "estadoCivil",
-    "codigoEstadoCivil",
-    "digitoVerificacion",
-    "foto",
-    "restriccion",
-    "codigoContinenteDomicilio",
-    "codigoPaisDomicilio",
-    "codigoDepartamentoDomicilio",
-    "codigoProvinciaDomicilio",
-    "codigoDistritoDomicilio",
-    "continenteDomicilio",
-    "paisDomicilio",
-    "departamentoDomicilio",
-    "provinciaDomicilio",
-    "distritoDomicilio",
-    "direccionCompleta",
-    "prenombreMadre",
-    "primerApellidoMadre",
-    "segundoApellidoMadre",
-    "prenombrePadre",
-    "primerApellidoPadre",
-    "segundoApellidoPadre",
-    "donacionOrgano",
-    "fechaInscripcion",
-    "fechaEmision",
-    "fechaCaducidad",
-    "continenteNacimiento",
-    "paisNacimiento",
-    "departamentoNacimiento",
-    "provinciaNacimiento",
-    "distritoNacimiento",
-    "codigoContinenteNacimiento",
-    "codigoPaisNacimiento",
-    "codigoDepartamentoNacimiento",
-    "codigoProvinciaNacimiento",
-    "codigoDistritoNacimiento",
-    "numeroDocumentoAdjunto",
-    "documentoAdjunto",
-    "codigoDocumentoAdjunto",
-    "codigoNivelEducativo",
-    "nivelEducativo",
-    "codigoVotacion",
-    "grupoVotacion"
-})
+@XmlType(name = "datosPersona", propOrder = {"dni", "prenombres", "primerApellido", "apellidoCasada", "segundoApellido", "fechaNacimiento", "genero", "estatura", "estadoCivil", "codigoEstadoCivil", "digitoVerificacion", "foto", "restriccion", "codigoContinenteDomicilio", "codigoPaisDomicilio", "codigoDepartamentoDomicilio", "codigoProvinciaDomicilio", "codigoDistritoDomicilio", "continenteDomicilio", "paisDomicilio", "departamentoDomicilio", "provinciaDomicilio", "distritoDomicilio", "direccionCompleta", "prenombreMadre", "primerApellidoMadre", "segundoApellidoMadre", "prenombrePadre", "primerApellidoPadre", "segundoApellidoPadre", "donacionOrgano", "fechaInscripcion", "fechaEmision", "fechaCaducidad", "continenteNacimiento", "paisNacimiento", "departamentoNacimiento", "provinciaNacimiento", "distritoNacimiento", "codigoContinenteNacimiento", "codigoPaisNacimiento", "codigoDepartamentoNacimiento", "codigoProvinciaNacimiento", "codigoDistritoNacimiento", "numeroDocumentoAdjunto", "documentoAdjunto", "codigoDocumentoAdjunto", "codigoNivelEducativo", "nivelEducativo", "codigoVotacion", "grupoVotacion"})
 public class DatosPersona {
 
     protected String dni;
@@ -185,11 +130,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad dni.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDni() {
         return dni;
@@ -197,11 +140,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad dni.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDni(String value) {
         this.dni = value;
@@ -209,11 +150,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad prenombres.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPrenombres() {
         return prenombres;
@@ -221,11 +160,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad prenombres.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPrenombres(String value) {
         this.prenombres = value;
@@ -233,11 +170,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad primerApellido.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPrimerApellido() {
         return primerApellido;
@@ -245,11 +180,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad primerApellido.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPrimerApellido(String value) {
         this.primerApellido = value;
@@ -257,11 +190,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad apellidoCasada.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getApellidoCasada() {
         return apellidoCasada;
@@ -269,11 +200,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad apellidoCasada.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setApellidoCasada(String value) {
         this.apellidoCasada = value;
@@ -281,11 +210,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad segundoApellido.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSegundoApellido() {
         return segundoApellido;
@@ -293,11 +220,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad segundoApellido.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSegundoApellido(String value) {
         this.segundoApellido = value;
@@ -305,11 +230,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad fechaNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFechaNacimiento() {
         return fechaNacimiento;
@@ -317,11 +240,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad fechaNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFechaNacimiento(String value) {
         this.fechaNacimiento = value;
@@ -329,11 +250,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad genero.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getGenero() {
         return genero;
@@ -341,11 +260,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad genero.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setGenero(String value) {
         this.genero = value;
@@ -353,11 +270,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad estatura.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getEstatura() {
         return estatura;
@@ -365,11 +280,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad estatura.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setEstatura(String value) {
         this.estatura = value;
@@ -377,11 +290,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad estadoCivil.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getEstadoCivil() {
         return estadoCivil;
@@ -389,11 +300,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad estadoCivil.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setEstadoCivil(String value) {
         this.estadoCivil = value;
@@ -401,11 +310,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoEstadoCivil.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoEstadoCivil() {
         return codigoEstadoCivil;
@@ -413,11 +320,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoEstadoCivil.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoEstadoCivil(String value) {
         this.codigoEstadoCivil = value;
@@ -425,11 +330,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad digitoVerificacion.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDigitoVerificacion() {
         return digitoVerificacion;
@@ -437,11 +340,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad digitoVerificacion.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDigitoVerificacion(String value) {
         this.digitoVerificacion = value;
@@ -449,10 +350,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad foto.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     * byte[]
      */
     public byte[] getFoto() {
         return foto;
@@ -460,10 +360,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad foto.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setFoto(byte[] value) {
         this.foto = value;
@@ -471,11 +370,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad restriccion.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getRestriccion() {
         return restriccion;
@@ -483,11 +380,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad restriccion.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setRestriccion(String value) {
         this.restriccion = value;
@@ -495,11 +390,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoContinenteDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoContinenteDomicilio() {
         return codigoContinenteDomicilio;
@@ -507,11 +400,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoContinenteDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoContinenteDomicilio(String value) {
         this.codigoContinenteDomicilio = value;
@@ -519,11 +410,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoPaisDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoPaisDomicilio() {
         return codigoPaisDomicilio;
@@ -531,11 +420,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoPaisDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoPaisDomicilio(String value) {
         this.codigoPaisDomicilio = value;
@@ -543,11 +430,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoDepartamentoDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoDepartamentoDomicilio() {
         return codigoDepartamentoDomicilio;
@@ -555,11 +440,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoDepartamentoDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoDepartamentoDomicilio(String value) {
         this.codigoDepartamentoDomicilio = value;
@@ -567,11 +450,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoProvinciaDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoProvinciaDomicilio() {
         return codigoProvinciaDomicilio;
@@ -579,11 +460,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoProvinciaDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoProvinciaDomicilio(String value) {
         this.codigoProvinciaDomicilio = value;
@@ -591,11 +470,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoDistritoDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoDistritoDomicilio() {
         return codigoDistritoDomicilio;
@@ -603,11 +480,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoDistritoDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoDistritoDomicilio(String value) {
         this.codigoDistritoDomicilio = value;
@@ -615,11 +490,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad continenteDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getContinenteDomicilio() {
         return continenteDomicilio;
@@ -627,11 +500,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad continenteDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setContinenteDomicilio(String value) {
         this.continenteDomicilio = value;
@@ -639,11 +510,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad paisDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPaisDomicilio() {
         return paisDomicilio;
@@ -651,11 +520,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad paisDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPaisDomicilio(String value) {
         this.paisDomicilio = value;
@@ -663,11 +530,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad departamentoDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDepartamentoDomicilio() {
         return departamentoDomicilio;
@@ -675,11 +540,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad departamentoDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDepartamentoDomicilio(String value) {
         this.departamentoDomicilio = value;
@@ -687,11 +550,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad provinciaDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getProvinciaDomicilio() {
         return provinciaDomicilio;
@@ -699,11 +560,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad provinciaDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setProvinciaDomicilio(String value) {
         this.provinciaDomicilio = value;
@@ -711,11 +570,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad distritoDomicilio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDistritoDomicilio() {
         return distritoDomicilio;
@@ -723,11 +580,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad distritoDomicilio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDistritoDomicilio(String value) {
         this.distritoDomicilio = value;
@@ -735,11 +590,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad direccionCompleta.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDireccionCompleta() {
         return direccionCompleta;
@@ -747,11 +600,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad direccionCompleta.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDireccionCompleta(String value) {
         this.direccionCompleta = value;
@@ -759,11 +610,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad prenombreMadre.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPrenombreMadre() {
         return prenombreMadre;
@@ -771,11 +620,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad prenombreMadre.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPrenombreMadre(String value) {
         this.prenombreMadre = value;
@@ -783,11 +630,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad primerApellidoMadre.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPrimerApellidoMadre() {
         return primerApellidoMadre;
@@ -795,11 +640,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad primerApellidoMadre.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPrimerApellidoMadre(String value) {
         this.primerApellidoMadre = value;
@@ -807,11 +650,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad segundoApellidoMadre.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSegundoApellidoMadre() {
         return segundoApellidoMadre;
@@ -819,11 +660,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad segundoApellidoMadre.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSegundoApellidoMadre(String value) {
         this.segundoApellidoMadre = value;
@@ -831,11 +670,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad prenombrePadre.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPrenombrePadre() {
         return prenombrePadre;
@@ -843,11 +680,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad prenombrePadre.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPrenombrePadre(String value) {
         this.prenombrePadre = value;
@@ -855,11 +690,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad primerApellidoPadre.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPrimerApellidoPadre() {
         return primerApellidoPadre;
@@ -867,11 +700,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad primerApellidoPadre.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPrimerApellidoPadre(String value) {
         this.primerApellidoPadre = value;
@@ -879,11 +710,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad segundoApellidoPadre.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSegundoApellidoPadre() {
         return segundoApellidoPadre;
@@ -891,11 +720,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad segundoApellidoPadre.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSegundoApellidoPadre(String value) {
         this.segundoApellidoPadre = value;
@@ -903,11 +730,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad donacionOrgano.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDonacionOrgano() {
         return donacionOrgano;
@@ -915,11 +740,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad donacionOrgano.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDonacionOrgano(String value) {
         this.donacionOrgano = value;
@@ -927,11 +750,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad fechaInscripcion.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFechaInscripcion() {
         return fechaInscripcion;
@@ -939,11 +760,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad fechaInscripcion.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFechaInscripcion(String value) {
         this.fechaInscripcion = value;
@@ -951,11 +770,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad fechaEmision.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFechaEmision() {
         return fechaEmision;
@@ -963,11 +780,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad fechaEmision.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFechaEmision(String value) {
         this.fechaEmision = value;
@@ -975,11 +790,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad fechaCaducidad.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFechaCaducidad() {
         return fechaCaducidad;
@@ -987,11 +800,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad fechaCaducidad.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFechaCaducidad(String value) {
         this.fechaCaducidad = value;
@@ -999,11 +810,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad continenteNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getContinenteNacimiento() {
         return continenteNacimiento;
@@ -1011,11 +820,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad continenteNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setContinenteNacimiento(String value) {
         this.continenteNacimiento = value;
@@ -1023,11 +830,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad paisNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPaisNacimiento() {
         return paisNacimiento;
@@ -1035,11 +840,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad paisNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPaisNacimiento(String value) {
         this.paisNacimiento = value;
@@ -1047,11 +850,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad departamentoNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDepartamentoNacimiento() {
         return departamentoNacimiento;
@@ -1059,11 +860,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad departamentoNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDepartamentoNacimiento(String value) {
         this.departamentoNacimiento = value;
@@ -1071,11 +870,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad provinciaNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getProvinciaNacimiento() {
         return provinciaNacimiento;
@@ -1083,11 +880,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad provinciaNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setProvinciaNacimiento(String value) {
         this.provinciaNacimiento = value;
@@ -1095,11 +890,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad distritoNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDistritoNacimiento() {
         return distritoNacimiento;
@@ -1107,11 +900,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad distritoNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDistritoNacimiento(String value) {
         this.distritoNacimiento = value;
@@ -1119,11 +910,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoContinenteNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoContinenteNacimiento() {
         return codigoContinenteNacimiento;
@@ -1131,11 +920,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoContinenteNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoContinenteNacimiento(String value) {
         this.codigoContinenteNacimiento = value;
@@ -1143,11 +930,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoPaisNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoPaisNacimiento() {
         return codigoPaisNacimiento;
@@ -1155,11 +940,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoPaisNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoPaisNacimiento(String value) {
         this.codigoPaisNacimiento = value;
@@ -1167,11 +950,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoDepartamentoNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoDepartamentoNacimiento() {
         return codigoDepartamentoNacimiento;
@@ -1179,11 +960,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoDepartamentoNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoDepartamentoNacimiento(String value) {
         this.codigoDepartamentoNacimiento = value;
@@ -1191,11 +970,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoProvinciaNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoProvinciaNacimiento() {
         return codigoProvinciaNacimiento;
@@ -1203,11 +980,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoProvinciaNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoProvinciaNacimiento(String value) {
         this.codigoProvinciaNacimiento = value;
@@ -1215,11 +990,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoDistritoNacimiento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoDistritoNacimiento() {
         return codigoDistritoNacimiento;
@@ -1227,11 +1000,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoDistritoNacimiento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoDistritoNacimiento(String value) {
         this.codigoDistritoNacimiento = value;
@@ -1239,11 +1010,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad numeroDocumentoAdjunto.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNumeroDocumentoAdjunto() {
         return numeroDocumentoAdjunto;
@@ -1251,11 +1020,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad numeroDocumentoAdjunto.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNumeroDocumentoAdjunto(String value) {
         this.numeroDocumentoAdjunto = value;
@@ -1263,11 +1030,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad documentoAdjunto.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDocumentoAdjunto() {
         return documentoAdjunto;
@@ -1275,11 +1040,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad documentoAdjunto.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDocumentoAdjunto(String value) {
         this.documentoAdjunto = value;
@@ -1287,11 +1050,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoDocumentoAdjunto.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoDocumentoAdjunto() {
         return codigoDocumentoAdjunto;
@@ -1299,11 +1060,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoDocumentoAdjunto.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoDocumentoAdjunto(String value) {
         this.codigoDocumentoAdjunto = value;
@@ -1311,11 +1070,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoNivelEducativo.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoNivelEducativo() {
         return codigoNivelEducativo;
@@ -1323,11 +1080,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoNivelEducativo.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoNivelEducativo(String value) {
         this.codigoNivelEducativo = value;
@@ -1335,11 +1090,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad nivelEducativo.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNivelEducativo() {
         return nivelEducativo;
@@ -1347,11 +1100,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad nivelEducativo.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNivelEducativo(String value) {
         this.nivelEducativo = value;
@@ -1359,11 +1110,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad codigoVotacion.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCodigoVotacion() {
         return codigoVotacion;
@@ -1371,11 +1120,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad codigoVotacion.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCodigoVotacion(String value) {
         this.codigoVotacion = value;
@@ -1383,11 +1130,9 @@ public class DatosPersona {
 
     /**
      * Obtiene el valor de la propiedad grupoVotacion.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getGrupoVotacion() {
         return grupoVotacion;
@@ -1395,11 +1140,9 @@ public class DatosPersona {
 
     /**
      * Define el valor de la propiedad grupoVotacion.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setGrupoVotacion(String value) {
         this.grupoVotacion = value;

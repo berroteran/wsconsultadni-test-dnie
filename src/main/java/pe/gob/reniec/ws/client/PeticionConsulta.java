@@ -1,4 +1,3 @@
-
 package pe.gob.reniec.ws.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para peticionConsulta complex type.
- * 
+ *
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * 
+ *
  * <pre>
  * &lt;complexType name="peticionConsulta">
  *   &lt;complexContent>
@@ -25,16 +24,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "peticionConsulta", propOrder = {
-    "nuDniConsulta",
-    "nuDniUsuario",
-    "nuRucUsuario",
-    "password"
-})
+@XmlType(name = "peticionConsulta", propOrder = {"nuDniConsulta", "nuDniUsuario", "nuRucUsuario", "password"})
 public class PeticionConsulta {
 
     protected String nuDniConsulta;
@@ -44,11 +36,9 @@ public class PeticionConsulta {
 
     /**
      * Obtiene el valor de la propiedad nuDniConsulta.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNuDniConsulta() {
         return nuDniConsulta;
@@ -56,11 +46,9 @@ public class PeticionConsulta {
 
     /**
      * Define el valor de la propiedad nuDniConsulta.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNuDniConsulta(String value) {
         this.nuDniConsulta = value;
@@ -68,11 +56,9 @@ public class PeticionConsulta {
 
     /**
      * Obtiene el valor de la propiedad nuDniUsuario.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNuDniUsuario() {
         return nuDniUsuario;
@@ -80,11 +66,9 @@ public class PeticionConsulta {
 
     /**
      * Define el valor de la propiedad nuDniUsuario.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNuDniUsuario(String value) {
         this.nuDniUsuario = value;
@@ -92,11 +76,9 @@ public class PeticionConsulta {
 
     /**
      * Obtiene el valor de la propiedad nuRucUsuario.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNuRucUsuario() {
         return nuRucUsuario;
@@ -104,11 +86,9 @@ public class PeticionConsulta {
 
     /**
      * Define el valor de la propiedad nuRucUsuario.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNuRucUsuario(String value) {
         this.nuRucUsuario = value;
@@ -116,11 +96,9 @@ public class PeticionConsulta {
 
     /**
      * Obtiene el valor de la propiedad password.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPassword() {
         return password;
@@ -128,11 +106,9 @@ public class PeticionConsulta {
 
     /**
      * Define el valor de la propiedad password.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPassword(String value) {
         this.password = value;

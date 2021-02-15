@@ -14,7 +14,6 @@ import java.security.spec.X509EncodedKeySpec;
 
 /**
  * modified from PemUtils.java : com.auth0.jwt.PemUtils (test)
- *
  */
 public class PemUtils {
 

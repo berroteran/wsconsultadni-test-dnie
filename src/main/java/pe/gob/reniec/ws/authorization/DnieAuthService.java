@@ -77,22 +77,12 @@ public interface DnieAuthService {
         }
 
         public boolean isValid() {
-            return server != null && !server.isEmpty() &&
-                    clientId != null && !clientId.isEmpty() &&
-                    secret != null && !secret.isEmpty() &&
-                    scope != null && !scope.isEmpty() &&
-                    redirectUri != null && !redirectUri.isEmpty();
+            return server != null && !server.isEmpty() && clientId != null && !clientId.isEmpty() && secret != null && !secret.isEmpty() && scope != null && !scope.isEmpty() && redirectUri != null && !redirectUri.isEmpty();
         }
 
         @Override
         public String toString() {
-            return "{"
-                    + "\"server\":\"" + (server == null ? "" : server) + "\""
-                    + ",\"clientId\":\"" + (clientId == null ? "" : clientId) + "\""
-                    + ",\"secret\":\"" + (secret == null ? "" : secret) + "\""
-                    + ",\"scope\":\"" + (scope == null ? "" : scope) + "\""
-                    + ",\"redirectUri\":\"" + (redirectUri == null ? "" : redirectUri) + "\""
-                    + "}";
+            return "{" + "\"server\":\"" + (server == null ? "" : server) + "\"" + ",\"clientId\":\"" + (clientId == null ? "" : clientId) + "\"" + ",\"secret\":\"" + (secret == null ? "" : secret) + "\"" + ",\"scope\":\"" + (scope == null ? "" : scope) + "\"" + ",\"redirectUri\":\"" + (redirectUri == null ? "" : redirectUri) + "\"" + "}";
         }
     }
 
@@ -156,24 +146,12 @@ public interface DnieAuthService {
         }
 
         public boolean isValid() {
-            return identityKeyStore != null && !identityKeyStore.isEmpty() &&
-                    identityKeyStorePassword != null && !identityKeyStorePassword.isEmpty() &&
-                    identityCertificateAlias != null && !identityCertificateAlias.isEmpty() &&
-                    identityCertificatePrivateKeyPassword != null && !identityCertificatePrivateKeyPassword.isEmpty() &&
-                    trustKeyStore != null && !trustKeyStore.isEmpty() &&
-                    trustKeyStorePassword != null && !trustKeyStorePassword.isEmpty();
+            return identityKeyStore != null && !identityKeyStore.isEmpty() && identityKeyStorePassword != null && !identityKeyStorePassword.isEmpty() && identityCertificateAlias != null && !identityCertificateAlias.isEmpty() && identityCertificatePrivateKeyPassword != null && !identityCertificatePrivateKeyPassword.isEmpty() && trustKeyStore != null && !trustKeyStore.isEmpty() && trustKeyStorePassword != null && !trustKeyStorePassword.isEmpty();
         }
 
         @Override
         public String toString() {
-            return "{"
-                    + "\"identityKeyStore\":\"" + (identityKeyStore == null ? "" : identityKeyStore) + "\""
-                    + ",\"identityKeyStorePassword\":\"" + (identityKeyStorePassword == null ? "" : identityKeyStorePassword) + "\""
-                    + ",\"identityCertificateAlias\":\"" + (identityCertificateAlias == null ? "" : identityCertificateAlias) + "\""
-                    + ",\"identityCertificatePrivateKeyPassword\":\"" + (identityCertificatePrivateKeyPassword == null ? "" : identityCertificatePrivateKeyPassword) + "\""
-                    + ",\"trustKeyStore\":\"" + (trustKeyStore == null ? "" : trustKeyStore) + "\""
-                    + ",\"trustKeyStorePassword\":\"" + (trustKeyStorePassword == null ? "" : trustKeyStorePassword) + "\""
-                    + "}";
+            return "{" + "\"identityKeyStore\":\"" + (identityKeyStore == null ? "" : identityKeyStore) + "\"" + ",\"identityKeyStorePassword\":\"" + (identityKeyStorePassword == null ? "" : identityKeyStorePassword) + "\"" + ",\"identityCertificateAlias\":\"" + (identityCertificateAlias == null ? "" : identityCertificateAlias) + "\"" + ",\"identityCertificatePrivateKeyPassword\":\"" + (identityCertificatePrivateKeyPassword == null ? "" : identityCertificatePrivateKeyPassword) + "\"" + ",\"trustKeyStore\":\"" + (trustKeyStore == null ? "" : trustKeyStore) + "\"" + ",\"trustKeyStorePassword\":\"" + (trustKeyStorePassword == null ? "" : trustKeyStorePassword) + "\"" + "}";
         }
     }
 }

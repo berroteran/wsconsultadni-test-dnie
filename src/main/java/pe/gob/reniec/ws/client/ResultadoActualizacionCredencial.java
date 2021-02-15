@@ -1,4 +1,3 @@
-
 package pe.gob.reniec.ws.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para resultadoActualizacionCredencial complex type.
- * 
+ *
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * 
+ *
  * <pre>
  * &lt;complexType name="resultadoActualizacionCredencial">
  *   &lt;complexContent>
@@ -23,14 +22,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "resultadoActualizacionCredencial", propOrder = {
-    "coResultado",
-    "deResultado"
-})
+@XmlType(name = "resultadoActualizacionCredencial", propOrder = {"coResultado", "deResultado"})
 public class ResultadoActualizacionCredencial {
 
     protected String coResultado;
@@ -38,11 +32,9 @@ public class ResultadoActualizacionCredencial {
 
     /**
      * Obtiene el valor de la propiedad coResultado.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCoResultado() {
         return coResultado;
@@ -50,11 +42,9 @@ public class ResultadoActualizacionCredencial {
 
     /**
      * Define el valor de la propiedad coResultado.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCoResultado(String value) {
         this.coResultado = value;
@@ -62,11 +52,9 @@ public class ResultadoActualizacionCredencial {
 
     /**
      * Obtiene el valor de la propiedad deResultado.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDeResultado() {
         return deResultado;
@@ -74,11 +62,9 @@ public class ResultadoActualizacionCredencial {
 
     /**
      * Define el valor de la propiedad deResultado.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDeResultado(String value) {
         this.deResultado = value;

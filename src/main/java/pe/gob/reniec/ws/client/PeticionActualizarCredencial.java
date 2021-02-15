@@ -1,4 +1,3 @@
-
 package pe.gob.reniec.ws.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para peticionActualizarCredencial complex type.
- * 
+ *
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * 
+ *
  * <pre>
  * &lt;complexType name="peticionActualizarCredencial">
  *   &lt;complexContent>
@@ -25,16 +24,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "peticionActualizarCredencial", propOrder = {
-    "credencialAnterior",
-    "credencialNueva",
-    "nuDni",
-    "nuRuc"
-})
+@XmlType(name = "peticionActualizarCredencial", propOrder = {"credencialAnterior", "credencialNueva", "nuDni", "nuRuc"})
 public class PeticionActualizarCredencial {
 
     protected String credencialAnterior;
@@ -44,11 +36,9 @@ public class PeticionActualizarCredencial {
 
     /**
      * Obtiene el valor de la propiedad credencialAnterior.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCredencialAnterior() {
         return credencialAnterior;
@@ -56,11 +46,9 @@ public class PeticionActualizarCredencial {
 
     /**
      * Define el valor de la propiedad credencialAnterior.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCredencialAnterior(String value) {
         this.credencialAnterior = value;
@@ -68,11 +56,9 @@ public class PeticionActualizarCredencial {
 
     /**
      * Obtiene el valor de la propiedad credencialNueva.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCredencialNueva() {
         return credencialNueva;
@@ -80,11 +66,9 @@ public class PeticionActualizarCredencial {
 
     /**
      * Define el valor de la propiedad credencialNueva.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCredencialNueva(String value) {
         this.credencialNueva = value;
@@ -92,11 +76,9 @@ public class PeticionActualizarCredencial {
 
     /**
      * Obtiene el valor de la propiedad nuDni.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNuDni() {
         return nuDni;
@@ -104,11 +86,9 @@ public class PeticionActualizarCredencial {
 
     /**
      * Define el valor de la propiedad nuDni.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNuDni(String value) {
         this.nuDni = value;
@@ -116,11 +96,9 @@ public class PeticionActualizarCredencial {
 
     /**
      * Obtiene el valor de la propiedad nuRuc.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNuRuc() {
         return nuRuc;
@@ -128,11 +106,9 @@ public class PeticionActualizarCredencial {
 
     /**
      * Define el valor de la propiedad nuRuc.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNuRuc(String value) {
         this.nuRuc = value;

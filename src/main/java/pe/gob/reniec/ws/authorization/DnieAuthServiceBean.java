@@ -43,7 +43,6 @@ import java.util.Map;
 /**
  * Clase que permite obtener el accessToken del servicio de autorización: https://dnieauth.reniec.gob.pe/sso
  * enviando el parametro Code Grant
- *
  */
 public class DnieAuthServiceBean implements DnieAuthService {
 
@@ -88,9 +87,7 @@ public class DnieAuthServiceBean implements DnieAuthService {
     //     curl -u $client_id:$secret -d grant_type='authorization_code&code='$code'&redirect_uri='$redirect_uri -X POST $oauth_server/oauth/token
     //
     @Override
-    public String getAccessToken(String oauthServer, String code, String clientId, String secret, String redirectUri)
-            throws IOException, UnrecoverableKeyException, CertificateException, NoSuchAlgorithmException,
-            KeyStoreException, KeyManagementException {
+    public String getAccessToken(String oauthServer, String code, String clientId, String secret, String redirectUri) throws IOException, UnrecoverableKeyException, CertificateException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
         String endpointUrl = oauthServer + "/oauth/token";
         log.info("retrieving token from {} for code {}", endpointUrl, code);
 
@@ -138,16 +135,12 @@ public class DnieAuthServiceBean implements DnieAuthService {
     }
 
     @Override
-    public String getAccessToken(String code) throws CertificateException, UnrecoverableKeyException,
-            NoSuchAlgorithmException, IOException, KeyManagementException, KeyStoreException {
-        return getAccessToken(oAuthConfiguration.getServer(),
-                code, oAuthConfiguration.getClientId(), oAuthConfiguration.getSecret(), oAuthConfiguration.getRedirectUri());
+    public String getAccessToken(String code) throws CertificateException, UnrecoverableKeyException, NoSuchAlgorithmException, IOException, KeyManagementException, KeyStoreException {
+        return getAccessToken(oAuthConfiguration.getServer(), code, oAuthConfiguration.getClientId(), oAuthConfiguration.getSecret(), oAuthConfiguration.getRedirectUri());
     }
 
     @Override
-    public String extractDniFromAccessToken(String accessToken, String oauthServer)
-            throws IOException, InvalidKeySpecException, NoSuchAlgorithmException, UnrecoverableKeyException,
-            CertificateException, KeyStoreException, KeyManagementException {
+    public String extractDniFromAccessToken(String accessToken, String oauthServer) throws IOException, InvalidKeySpecException, NoSuchAlgorithmException, UnrecoverableKeyException, CertificateException, KeyStoreException, KeyManagementException {
 
         String authorizationServerPublicKey = getAuthorizationServerPublicKey(getTokenKeyUrl(oauthServer));
 
@@ -168,14 +161,12 @@ public class DnieAuthServiceBean implements DnieAuthService {
     }
 
     @Override
-    public String extractDniFromAccessToken(String accessToken) throws CertificateException, UnrecoverableKeyException,
-            NoSuchAlgorithmException, IOException, KeyManagementException, KeyStoreException, InvalidKeySpecException {
+    public String extractDniFromAccessToken(String accessToken) throws CertificateException, UnrecoverableKeyException, NoSuchAlgorithmException, IOException, KeyManagementException, KeyStoreException, InvalidKeySpecException {
         return extractDniFromAccessToken(accessToken, oAuthConfiguration.getServer());
     }
 
     // we use Apache HttpClient
-    private String getAuthorizationServerPublicKey(String endpointUrl) throws IOException, UnrecoverableKeyException,
-            CertificateException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
+    private String getAuthorizationServerPublicKey(String endpointUrl) throws IOException, UnrecoverableKeyException, CertificateException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
         if (authorizationServerPublicKey == null) {
             HttpClient client = getHttpClient();
             HttpGet get = new HttpGet(endpointUrl);
@@ -209,43 +200,30 @@ public class DnieAuthServiceBean implements DnieAuthService {
         return authorizationServerPublicKey;
     }
 
-    private HttpClient getHttpClient() throws KeyStoreException, CertificateException, NoSuchAlgorithmException,
-            IOException, UnrecoverableKeyException, KeyManagementException {
+    private HttpClient getHttpClient() throws KeyStoreException, CertificateException, NoSuchAlgorithmException, IOException, UnrecoverableKeyException, KeyManagementException {
 //        if (httpClient == null) {
         KeyStore identityKeyStore = KeyStore.getInstance("jks");
-        identityKeyStore.load(DnieAuthServiceBean.class.getClassLoader().getResourceAsStream(
-                httpClientConfiguration.getIdentityKeyStore()),
-                httpClientConfiguration.getIdentityKeyStorePassword().toCharArray());
+        identityKeyStore.load(DnieAuthServiceBean.class.getClassLoader().getResourceAsStream(httpClientConfiguration.getIdentityKeyStore()), httpClientConfiguration.getIdentityKeyStorePassword().toCharArray());
 
         KeyStore trustKeyStore = KeyStore.getInstance("jks");
-        trustKeyStore.load(DnieAuthServiceBean.class.getClassLoader().getResourceAsStream(
-                httpClientConfiguration.getTrustKeyStore()),
-                httpClientConfiguration.getTrustKeyStorePassword().toCharArray());
+        trustKeyStore.load(DnieAuthServiceBean.class.getClassLoader().getResourceAsStream(httpClientConfiguration.getTrustKeyStore()), httpClientConfiguration.getTrustKeyStorePassword().toCharArray());
 
-        SSLContext sslContext = SSLContexts
-                .custom()
+        SSLContext sslContext = SSLContexts.custom()
                 // load identity keystore
-                .loadKeyMaterial(identityKeyStore,
-                        httpClientConfiguration.getIdentityCertificatePrivateKeyPassword().toCharArray(),
-                        new PrivateKeyStrategy() {
-                            @Override
-                            public String chooseAlias(Map<String, PrivateKeyDetails> aliases, Socket socket) {
-                                return httpClientConfiguration.getIdentityCertificateAlias();
-                            }
-                        })
+                .loadKeyMaterial(identityKeyStore, httpClientConfiguration.getIdentityCertificatePrivateKeyPassword().toCharArray(), new PrivateKeyStrategy() {
+                    @Override
+                    public String chooseAlias(Map<String, PrivateKeyDetails> aliases, Socket socket) {
+                        return httpClientConfiguration.getIdentityCertificateAlias();
+                    }
+                })
                 // load trust keystore
                 //.loadTrustMaterial(trustKeyStore, null)
                 .build();
 
-        SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(sslContext,
-                new String[]{"TLSv1.2", "TLSv1.1"},
-                null,
-                SSLConnectionSocketFactory.getDefaultHostnameVerifier());
+        SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(sslContext, new String[]{"TLSv1.2", "TLSv1.1"}, null, SSLConnectionSocketFactory.getDefaultHostnameVerifier());
 
 
-        httpClient = HttpClients.custom()
-                .setSSLSocketFactory(sslConnectionSocketFactory)
-                .build();
+        httpClient = HttpClients.custom().setSSLSocketFactory(sslConnectionSocketFactory).build();
         return httpClient;
     }
 

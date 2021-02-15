@@ -1,4 +1,3 @@
-
 package pe.gob.reniec.ws.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para resultadoConsulta complex type.
- * 
+ *
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * 
+ *
  * <pre>
  * &lt;complexType name="resultadoConsulta">
  *   &lt;complexContent>
@@ -24,15 +23,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "resultadoConsulta", propOrder = {
-    "coResultado",
-    "deResultado",
-    "datosPersona"
-})
+@XmlType(name = "resultadoConsulta", propOrder = {"coResultado", "deResultado", "datosPersona"})
 public class ResultadoConsulta {
 
     protected String coResultado;
@@ -41,11 +34,9 @@ public class ResultadoConsulta {
 
     /**
      * Obtiene el valor de la propiedad coResultado.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCoResultado() {
         return coResultado;
@@ -53,11 +44,9 @@ public class ResultadoConsulta {
 
     /**
      * Define el valor de la propiedad coResultado.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCoResultado(String value) {
         this.coResultado = value;
@@ -65,11 +54,9 @@ public class ResultadoConsulta {
 
     /**
      * Obtiene el valor de la propiedad deResultado.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDeResultado() {
         return deResultado;
@@ -77,11 +64,9 @@ public class ResultadoConsulta {
 
     /**
      * Define el valor de la propiedad deResultado.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDeResultado(String value) {
         this.deResultado = value;
@@ -89,11 +74,9 @@ public class ResultadoConsulta {
 
     /**
      * Obtiene el valor de la propiedad datosPersona.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DatosPersona }
-     *     
+     *
+     * @return possible object is
+     * {@link DatosPersona }
      */
     public DatosPersona getDatosPersona() {
         return datosPersona;
@@ -101,11 +84,9 @@ public class ResultadoConsulta {
 
     /**
      * Define el valor de la propiedad datosPersona.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DatosPersona }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link DatosPersona }
      */
     public void setDatosPersona(DatosPersona value) {
         this.datosPersona = value;

@@ -130,6 +130,28 @@
 
     </script>
 
+    <script language="JavaScript" type="text/javascript"
+            src="https://serviciosportal.reniec.gob.pe/mwwd2/resources/js/dnieauth-1.0.full.min.js"></script>
+
+    <script language="JavaScript" type="text/javascript">
+        var appArgs = {
+            dnieAuthServer: 'https://dnieauth.reniec.gob.pe/sso',// servidor de autenticación
+            dnieAuthClientId: 'test.20295613620.localapp',// client id solicitar a reniec
+            dnieAuthRedirectUri: 'http://localhost:8080/wsconsultadni-test-dnie/accessToken.do',
+            dnieAuthScope: 'all', // scope por defecto all
+            dnieAuthState: 'abcdef'// State por defecto abcdef
+        };
+
+        function onLoginSuccess(evt) {
+            // “url de redirección”
+            console.log(evt);
+        }
+
+        function onLoginError(evt) {
+            // Error
+            console.log(evt);
+        }
+    </script>
 </head>
 <body>
 
